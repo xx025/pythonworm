@@ -12,7 +12,7 @@ headers = {
     'Accept-Language': ' zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
     'Cache-Control': ' max-age=0',
     'Connection': ' keep-alive',
-    'Cookie': ' ddscreen=2; ddscreen=2; dest_area=country_id%3D9000%26province_id%3D111%26city_id%20%3D0%26district_id%3D0%26town_id%3D0; __permanent_id=20201205194104160290772419504871801; __rpm=...1607168495738%7C...1607168502004',
+    'Cookie': '请填入自己的Cookies ',
     'DNT': ' 1',
     'Host': ' bang.dangdang.com',
     'Upgrade-Insecure-Requests': ' 1',
