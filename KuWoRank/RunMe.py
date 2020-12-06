@@ -13,14 +13,17 @@ for tii in range(1, 10):
         rankList = driver.find_elements_by_class_name("rank_list")[0]
         songLIst = rankList.find_elements_by_class_name("song_item")
         for song in songLIst:
-            driver.execute_script("arguments[0].scrollIntoView();", song)  # 滑到标签
-            song_name = song.find_elements_by_class_name("song_name")[0].text
-            song_artist = song.find_elements_by_class_name("song_artist")[0].text
-            song_album = song.find_elements_by_class_name("song_album")[0].text
-            song_time = song.find_elements_by_class_name("song_time")[0].text
-            thissong = [song_name, song_artist, song_album, song_time]
-            songRankList.append(thissong)
-            print(thissong)
+            try:
+                driver.execute_script("arguments[0].scrollIntoView();", song)  # 滑到标签
+                song_name = song.find_elements_by_class_name("song_name")[0].text
+                song_artist = song.find_elements_by_class_name("song_artist")[0].text
+                song_album = song.find_elements_by_class_name("song_album")[0].text
+                song_time = song.find_elements_by_class_name("song_time")[0].text
+                thissong = [song_name, song_artist, song_album, song_time]
+                songRankList.append(thissong)
+                print(thissong)
+            except:
+                print("失败!!!!!!!!")
     except:
         print("失败!!!!!!!!")
         pass
